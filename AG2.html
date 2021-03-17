@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <title>Texturas</title>
+            <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="aframe-particle-system-component.min.js"></script>
+</head>
+<body>
+    <a-scene>
+            <a-camera fov="60" position="0 2 3"></a-camera>
+            
+            <a-plane 
+                position="0 0 -6" rotation="-90 0 0" src="./imagenes/Suelo.jpeg" 
+                repeat="2 2 2"
+                width="7" height="7">
+            </a-plane>
+            <a-plane 
+                position="0 2 -9" rotation="0 0 0" src="./imagenes/Suelo.jpeg" 
+                repeat="2 2 2"
+                width="7" height="7">
+            </a-plane>  
+            
+            <a-cylinder src="./imagenes/Madera.jpeg" position="1.7 1 -7.5" rotation="0 0 0" radius="0.2"  height="2"></a-cylinder>
+             <a-cylinder src="./imagenes/Madera.jpeg" position="-1.7 1 -4" rotation="0 0 0" radius="0.2"  height="2"></a-cylinder>
+              <a-cylinder src="./imagenes/Madera.jpeg" position="1.7 1 -4" rotation="0 0 0" radius="0.2"  height="2"></a-cylinder>
+               <a-cylinder src="./imagenes/Madera.jpeg" position="-1.7 1 -7.5" rotation="0 0 0" radius="0.2"  height="2"></a-cylinder>
+               <a-box 
+                position="0 2 -5.5" rotation="90 0 0" src="./imagenes/Madera.jpeg" 
+                
+                width="4" height="4">
+            </a-box> 
+             <a-box 
+                position="0 4 -7.5" rotation="0 0 0" src="./imagenes/Madera.jpeg" 
+                repeat="2 2 2"
+                width="4" height="5">
+            </a-box>
+            
+            
+            <a-sky color="black"></a-sky>
+        </a-scene>
+    
+</body>
+</html>

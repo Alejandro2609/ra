@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiro</title>
+    <!-- Incluimos la librería A-Frame -->
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+    <!-- Incluimos ar.js para A-Frame -->
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs>
+    <!-- Creamos nuestro propio contenido -->
+    <a-cylinder src="./imagenes/Madera.jpeg" position="1.7 1 -7.5" rotation="0 0 0" radius="0.2"  height="2"></a-cylinder>
+             <a-cylinder src="./imagenes/Madera.jpeg" position="-1.7 1 -4" rotation="0 0 0" radius="0.2"  height="2"></a-cylinder>
+              <a-cylinder src="./imagenes/Madera.jpeg" position="1.7 1 -4" rotation="0 0 0" radius="0.2"  height="2"></a-cylinder>
+               <a-cylinder src="./imagenes/Madera.jpeg" position="-1.7 1 -7.5" rotation="0 0 0" radius="0.2"  height="2"></a-cylinder>
+               <a-box 
+                position="0 2 -5.5" rotation="90 0 0" src="./imagenes/Madera.jpeg" 
+                
+                width="4" height="4">
+            </a-box> 
+             <a-box 
+                position="0 4 -7.5" rotation="0 0 0" src="./imagenes/Madera.jpeg" 
+                repeat="2 2 2"
+                width="4" height="5">
+            </a-box>
+    <!-- Definimos una cámara asociada a nuestro marcador -->
+    <a-marker-camera preset='hiro'></a-marker-camera>
+  </a-scene>  
+</body>
+</html>
